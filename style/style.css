@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+.container-top h1 {
+    font-size: 40px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    text-align: center;
+    padding: 55px 20px 10px 20px;
+}
+
+.container-top p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    text-align: center;
+    padding: 0px 5px 20px 5px;
+}
+
+.container-top .ratings {
+    padding: 0px 20px 20px 20px;
+}
+
+.container-top .rating {
+    background-color: hsl(305, 20%, 89%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-top .rating .fa-star {
+    color: #ffbb00;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.container-top .rating p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding: 0;
+    padding-bottom: 20px;
+}
+.container-bottom {
+    margin-bottom: 40px;
+}
+
+.review {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    margin: 15px 18px;
+    border-radius: 10px;
+    height: auto;
+    padding: 30px 25px !important;
+}
+
+.review .avatar-name {
+    display: flex;
+    align-items: center;
+    padding-bottom: 14px;
+}
+
+.review .avatar-name img {
+    border-radius: 50%;
+}
+
+.review .avatar-name .name {
+padding-left: 20px;
+}
+
+.review .avatar-name .name h3{
+font-size: 15px;
+font-weight:700;
+padding-bottom: 10px;
+margin: 0;
+}
+
+.review .avatar-name .name p {
+    color: hsl(333, 80%, 67%);
+    margin: 0;
+}
+
+/* Ipad Pro */ 
+
+@media (min-width: 900px) and (max-width: 1439px) {
+
+    .container {
+        margin: 80px auto;
+        display: block;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding-bottom: 20px;
+    } 
+
+    .container-top .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-top .ratings {
+        margin-right: 35px;
+    }
+
+    .container-top #rating-1 {
+        transform: translateX(-20%);
+    }
+
+    .container-top #rating-2 {
+        transform: translateX(-10%);
+    }
+
+    .container-bottom .row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container-bottom #review-2 {
+        transform: translateY(6%);
+    }
+
+    .container-bottom #review-3 {
+        transform: translateY(12%);
+    }
+}
+
+/* Desktop  */
+
+@media (min-width: 1440px) {
+
+    body {
+        background: url('../images/bg-pattern-bottom-desktop.svg');
+        height: 100vh;
+    }
+
+    .container {
+        background: url('../images/bg-pattern-top-desktop.svg');
+        width: 100%;
+        display: block;
+        margin: 60px auto;
+        padding-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .container-top .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-top .intro {
+        margin-left: 15px;
+    }
+
+    .container-top .intro h1, .container-top .intro h1 {
+        padding-left: 0;
+    }
+
+    .container-top .intro h1, .container-top .intro p {
+        text-align: left;
+    }
+
+    .container-top .ratings {
+        margin-right: 50px;
+    }
+
+    .container-top .rating {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        width: 400px;
+        margin-top: 15px;
+    }
+
+    .container-top .rating .fa-star {
+        padding: 0 0 0 5px;
+        margin: 0;
+    }
+
+    .container-top .rating p {
+        padding-bottom: 0;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .container-top #rating-1 {
+        transform: translateX(-20%);
+    }
+
+    .container-top #rating-2 {
+        transform: translateX(-10%);
+    }
+
+    .container-bottom .row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container-bottom .review {
+        min-width: 340px;
+        max-height: 270px;
+    }
+
+    .container-bottom #review-2 {
+        transform: translateY(6%);
+    }
+
+    .container-bottom #review-3 {
+        transform: translateY(12%);
+    }
+}
